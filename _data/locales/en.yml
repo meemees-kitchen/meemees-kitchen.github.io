@@ -1,0 +1,21 @@
+categories:
+  category_measure:
+    singular: category
+    plural: categories
+  post_measure:
+    singular: recipe
+    plural: recipes
+
+
+copyright:
+  # Shown at the bottom of the post
+  license:
+    template: ""
+    name:
+    link:
+
+  # Displayed in the footer
+  brief: Recipes from over the years
+  verbose: ""
+
+meta: Cook at your own risk
