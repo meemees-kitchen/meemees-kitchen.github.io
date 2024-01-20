@@ -24,7 +24,7 @@ generatePost() {
 		mkdir -p "${IMAGES}/${category}/"
 
 		# process the image(s)
-		find "${SOURCE}/${category}/" -name "${file}*" -type f -printf "%f\n" | sort | while read img
+		find "${SOURCE}/${category}/" -name "${file}.*" -type f -printf "%f\n" | sort | while read img
 		do
 			img_no_jpg="${img%.jpg}"
 			cp "${SOURCE}/${category}/${img}" "${TMP}/"
@@ -46,9 +46,9 @@ generatePost() {
 find $SOURCE/ -mindepth 1 -type d -printf "%f\n" | while read category
 do
 	echo "Creating directory ${category}"
-	mkdir ${TARGET}/${category}
+	mkdir -p "${TARGET}/${category}"
 
-	find $SOURCE/${category} -mindepth 1 -type f -printf "%f\n" | while read file
+	find "$SOURCE/${category}" -mindepth 1 -type f -printf "%f\n" | while read file
 	do
 		file_no_jpg="${file%.jpg}"
 		file_no_number="${file_no_jpg%.*}"
