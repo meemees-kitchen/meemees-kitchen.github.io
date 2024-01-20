@@ -16,7 +16,7 @@ timezone: America/New_York
 
 title: MeeMee's Kitchen
 
-tagline: All the recipes
+tagline: A lifetime of recipes
 
 description: Cook at your own risk
 
@@ -67,7 +67,7 @@ theme_mode: # [light|dark]
 img_cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar:
+avatar: assets/meemee.jpg
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
